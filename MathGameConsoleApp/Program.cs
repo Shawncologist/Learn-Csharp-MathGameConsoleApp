@@ -22,28 +22,44 @@ Q - Quit this program");
 
             if (userChoice.Trim().ToLower() == "a")
             {
-                Console.WriteLine("You've selected Addition.");
+                AdditionGame("You've selected Addition");
             }
             else if (userChoice.Trim().ToLower() == "s")
             {
-                Console.WriteLine("You've selected Subtraction.");
+                SubtractionGame("You've selected Subtraction");
             }
             else if (userChoice.Trim().ToLower() == "m") 
             {
-                Console.WriteLine("You've selected Multiplication.");
+                MultiplicationGame("You've selected Multiplication");
             }
             else if (userChoice.Trim().ToLower() == "d")
             {
-                Console.WriteLine("You've selected Division.");
+                DivisionGame("You've selected Division");
             }
             else if (userChoice.Trim().ToLower() == "q")
             {
-                Console.WriteLine("Thank you for your time, goodbye.");
+                Console.WriteLine("Thank you for your time, goodbye");
                 Environment.Exit(1);
             }
             else
             {
-                Console.WriteLine("Invalid selection.");
+                Console.WriteLine("Invalid selection");
+            }
+            void AdditionGame(string message)
+            {
+                Console.WriteLine(message);
+            }
+            void SubtractionGame(string message)
+            {
+                Console.WriteLine(message);
+            }
+            void MultiplicationGame(string message)
+            {
+                Console.WriteLine(message);
+            }
+            void DivisionGame(string message)
+            {
+                Console.WriteLine(message);
             }
         }
     }
