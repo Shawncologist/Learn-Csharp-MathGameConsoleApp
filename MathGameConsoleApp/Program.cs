@@ -18,8 +18,33 @@ D - Division
 Q - Quit this program");
             Console.WriteLine(" - + - + - + - + - + - + - ");
 
+            var userChoice = Console.ReadLine();
 
-
+            if (userChoice.Trim().ToLower() == "a")
+            {
+                Console.WriteLine("You've selected Addition.");
+            }
+            else if (userChoice.Trim().ToLower() == "s")
+            {
+                Console.WriteLine("You've selected Subtraction.");
+            }
+            else if (userChoice.Trim().ToLower() == "m") 
+            {
+                Console.WriteLine("You've selected Multiplication.");
+            }
+            else if (userChoice.Trim().ToLower() == "d")
+            {
+                Console.WriteLine("You've selected Division.");
+            }
+            else if (userChoice.Trim().ToLower() == "q")
+            {
+                Console.WriteLine("Thank you for your time, goodbye.");
+                Environment.Exit(1);
+            }
+            else
+            {
+                Console.WriteLine("Invalid selection.");
+            }
         }
     }
 }
